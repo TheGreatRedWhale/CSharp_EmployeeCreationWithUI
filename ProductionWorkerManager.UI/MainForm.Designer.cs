@@ -226,6 +226,7 @@
             this.createObjectButton.TabIndex = 9;
             this.createObjectButton.Text = "Create Object";
             this.createObjectButton.UseVisualStyleBackColor = true;
+            this.createObjectButton.Click += new System.EventHandler(this.createObjectButton_Click);
             // 
             // MainForm
             // 
