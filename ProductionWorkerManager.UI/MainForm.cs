@@ -20,7 +20,7 @@ namespace ProductionWorkerManager.UI
 
         // CUSTOM METHODS
 
-        private ProductionWorker CreateEmployee()
+        public ProductionWorker CreateProductionWorker()
         {
             ProductionWorker employee = new ProductionWorker();
 
@@ -78,13 +78,32 @@ namespace ProductionWorkerManager.UI
                 employee.HourlyRate = -1.0;
             }
 
+            ClearInput();
             return employee;
         }
+
+        public void DisplayProductionWorker(ProductionWorker productionWorker)
+        {
+            outputEmployeeNameTextBox.Text = productionWorker.Name;
+            outputEmployeeNumberTextBox.Text = productionWorker.Number.ToString();
+            outputEmployeeShiftTextBox.Text = productionWorker.ShiftNumber.ToString();
+            outputEmployeeHourlyRateTextBox.Text = productionWorker.HourlyRate.ToString();
+        }
+
+        public void ClearInput()
+        {
+            inputEmployeeNameTextBox.Text = "";
+            inputEmployeeNumberTextBox.Text = "";
+            inputEmployeeShiftTextBox.Text = "";
+            inputEmployeeHourlyRateTextBox.Text = "";
+        }
+
         // GENERATED METHODS
 
         private void createObjectButton_Click(object sender, EventArgs e)
         {
-            ProductionWorker employee = CreateEmployee();
+            ProductionWorker employee = CreateProductionWorker();
+
         }
     }
 }

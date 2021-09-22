@@ -142,7 +142,6 @@
             this.outputGroupBox.Controls.Add(this.outputEmployeeShiftLabel);
             this.outputGroupBox.Controls.Add(this.outputEmployeeNumberLabel);
             this.outputGroupBox.Controls.Add(this.outputEmployeeNameLabel);
-            this.outputGroupBox.Enabled = false;
             this.outputGroupBox.Location = new System.Drawing.Point(12, 161);
             this.outputGroupBox.Name = "outputGroupBox";
             this.outputGroupBox.Size = new System.Drawing.Size(258, 133);
@@ -155,6 +154,7 @@
             this.outputEmployeeHourlyRateTextBox.Enabled = false;
             this.outputEmployeeHourlyRateTextBox.Location = new System.Drawing.Point(87, 101);
             this.outputEmployeeHourlyRateTextBox.Name = "outputEmployeeHourlyRateTextBox";
+            this.outputEmployeeHourlyRateTextBox.ReadOnly = true;
             this.outputEmployeeHourlyRateTextBox.Size = new System.Drawing.Size(159, 20);
             this.outputEmployeeHourlyRateTextBox.TabIndex = 7;
             // 
@@ -163,6 +163,7 @@
             this.outputEmployeeShiftTextBox.Enabled = false;
             this.outputEmployeeShiftTextBox.Location = new System.Drawing.Point(87, 75);
             this.outputEmployeeShiftTextBox.Name = "outputEmployeeShiftTextBox";
+            this.outputEmployeeShiftTextBox.ReadOnly = true;
             this.outputEmployeeShiftTextBox.Size = new System.Drawing.Size(159, 20);
             this.outputEmployeeShiftTextBox.TabIndex = 6;
             // 
@@ -171,6 +172,7 @@
             this.outputEmployeeNumberTextBox.Enabled = false;
             this.outputEmployeeNumberTextBox.Location = new System.Drawing.Point(87, 49);
             this.outputEmployeeNumberTextBox.Name = "outputEmployeeNumberTextBox";
+            this.outputEmployeeNumberTextBox.ReadOnly = true;
             this.outputEmployeeNumberTextBox.Size = new System.Drawing.Size(159, 20);
             this.outputEmployeeNumberTextBox.TabIndex = 5;
             // 
@@ -179,6 +181,7 @@
             this.outputEmployeeNameTextBox.Enabled = false;
             this.outputEmployeeNameTextBox.Location = new System.Drawing.Point(87, 23);
             this.outputEmployeeNameTextBox.Name = "outputEmployeeNameTextBox";
+            this.outputEmployeeNameTextBox.ReadOnly = true;
             this.outputEmployeeNameTextBox.Size = new System.Drawing.Size(159, 20);
             this.outputEmployeeNameTextBox.TabIndex = 4;
             // 
