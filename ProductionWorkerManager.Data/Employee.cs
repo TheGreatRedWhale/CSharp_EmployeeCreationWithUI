@@ -8,6 +8,7 @@ namespace ProductionWorkerManager.Data
 {
     public abstract class Employee
     {
+        private static int nextNumber = 0;
         private string _name;
         private int _number;
 
@@ -33,6 +34,17 @@ namespace ProductionWorkerManager.Data
             {
                 _number = value;
             }
+        }
+
+        public Employee()
+        {
+            Number = GetNextEmployeeNumber();
+            Name = "";
+        }
+
+        public static int GetNextEmployeeNumber()
+        {
+            return ++nextNumber;
         }
     }
 }
